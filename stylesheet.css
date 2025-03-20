@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+:root{
+    --base-color: #2F4550;
+    --base-variant: #586F7C;
+    --text-color: #F4F4F9;
+    --secondary-text: #000000;
+    --accent-color: #B8DBD9; 
+}
+
+.modo_claro{
+    --base-color: #586F7C;
+    --base-variant: #2F4550;
+    --text-color: #000000;
+    --secondary-text: #F4F4F9;
+    --accent-color:  #B8DBD9;
+}
+
+body {
+    background-color: var(--base-color);
+    color: #F4F4F9;
+    font-size: 25px;
+    margin: 0;
+}
+
+body.modo_claro {
+    --base-color: #586F7C;
+    --base-variant: #2F4550;
+    --text-color: #000000;
+    --secondary-text: #F4F4F9;
+    --accent-color: #B8DBD9;
+}
+
+h1{
+    font-family: 'Bruno Ace SC';
+    padding: 25px;
+}
+
+#trocar_tema{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5px;
+    right: 20px;
+}
+
+#trocar_tema svg:last-child{
+    display: none;
+}
+
+.modo_claro #trocar_tema svg:first-child{
+    display: none;
+}
+
+.modo_claro #trocar_tema svg:last-child{
+    display: block;
+}
+
+
+.cabecalho__menu{
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--base-variant);
+    height: 60px;
+    gap: 40px;
+    padding-left: 20px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Bruno Ace SC';
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 15px;
+    color: #B8DBD9;
+    text-decoration: none;
+}
