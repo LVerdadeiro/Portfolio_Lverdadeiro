@@ -5,7 +5,8 @@
     --base-variant: #586F7C;
     --text-color: #F4F4F9;
     --secondary-text: #000000;
-    --accent-color: #B8DBD9; 
+    --primary-color: #7ea4a2; 
+    --accent-color:  #B8DBD9;
 }
 
 .modo_claro{
@@ -13,6 +14,7 @@
     --base-variant: #2F4550;
     --text-color: #000000;
     --secondary-text: #F4F4F9;
+    --primary-color: #7ea4a2; 
     --accent-color:  #B8DBD9;
 }
 
@@ -28,10 +30,11 @@ body.modo_claro {
     --base-variant: #2F4550;
     --text-color: #000000;
     --secondary-text: #F4F4F9;
+    --primary-color: #7ea4a2; 
     --accent-color: #B8DBD9;
 }
 
-h1{
+.container{
     font-family: 'Bruno Ace SC';
     padding: 25px;
 }
@@ -76,10 +79,14 @@ h1{
     font-size: 24px;
     font-weight: 600;
     padding-top: 15px;
-    color: #B8DBD9;
+    color: #F4F4F9;
     text-decoration: none;
 }
 
-.ativo {
+.cabecalho__menu__link:hover{
+    color: var(--primary-color);
+}
+
+.ativo{
     color: var(--accent-color);
 }
