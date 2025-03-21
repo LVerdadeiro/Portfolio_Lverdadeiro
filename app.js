@@ -8,10 +8,10 @@ const habilitaModoClaro = () => {
 
 const desabilitarModoClaro = () => {
     document.body.classList.remove("modo_claro");
-    localStorage.removeItem("modo_claro"); // Melhor que setar como null
+    localStorage.removeItem("modo_claro");
 };
 
-// Aplica o tema ao carregar a página
+
 if (modo_claro === "ativo") {
     habilitaModoClaro();
 }
