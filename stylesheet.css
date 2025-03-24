@@ -57,6 +57,10 @@ body.modo_claro {
     display: none;
 }
 
+#paragrafo_introdutorio{
+    width: 700px;
+}
+
 .modo_claro #trocar_tema svg:first-child{
     display: none;
 }
@@ -89,4 +93,37 @@ body.modo_claro {
 
 .ativo{
     color: var(--accent-color);
+}
+
+.apresentacao_links{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao_links_link {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 16px;
+    border: 3px solid var(--accent-color);
+    width: 278px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 24px; 
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Bruno Ace SC';
+}
+
+.apresentacao_links_link:hover{
+    color: var(--primary-color)
+}
+
+.logo_redes {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
 }
