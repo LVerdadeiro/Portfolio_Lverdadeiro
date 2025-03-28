@@ -19,19 +19,25 @@
 }
 
 body {
-    background-color: var(--base-color);
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(47,69,80,1) 35%, rgba(45,147,168,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #F4F4F9;
     font-size: 25px;
     margin: 0;
 }
 
 body.modo_claro {
-    --base-color: #586F7C;
     --base-variant: #2F4550;
     --text-color: #000000;
     --secondary-text: #F4F4F9;
     --primary-color: #7ea4a2; 
     --accent-color: #B8DBD9;
+    background: rgb(2,0,36);
+    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(126,164,162,1) 35%, rgba(24,179,210,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container{
@@ -57,8 +63,13 @@ body.modo_claro {
     display: none;
 }
 
-#paragrafo_introdutorio{
+#paragrafo_sobre{
     width: 700px;
+}
+
+#div_sobre{
+    display: flex;
+    justify-content: space-between;
 }
 
 .modo_claro #trocar_tema svg:first-child{
@@ -98,7 +109,9 @@ body.modo_claro {
 .apresentacao_links{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
+    padding: 0 0px;
 }
 
 .apresentacao_links_link {
@@ -116,9 +129,14 @@ body.modo_claro {
     text-decoration: none;
     color: #F6F6F6;
     font-family: 'Bruno Ace SC';
+    padding: 15px;
 }
 
 .apresentacao_links_link:hover{
+    color: var(--accent-color)
+}
+
+.modo_claro .apresentacao_links_link:hover{
     color: var(--primary-color)
 }
 
