@@ -76,9 +76,9 @@ body.modo_claro {
 
 #div_projetos{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
 }
-
 
 .container{
     font-family: 'Bruno Ace SC';
@@ -162,7 +162,17 @@ body.modo_claro {
     vertical-align: middle;
 }
 
-.div_projeto_esq{
+.projeto_dir{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-family: 'Bruno Ace SC';
+    padding: 20px;
+    padding-top: 12rem;
+    gap: 40px;
+}
+
+.projeto_esq{
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -171,17 +181,13 @@ body.modo_claro {
     gap: 40px;
 }
 
-.div_projeto_esq p, .div_projeto_dir p{
+.projeto_dir, .projeto_esq p{
     width: 700px;
 }
 
-.div_projeto_dir{
+.coluna_projeto{
     display: flex;
     flex-direction: column;
-    align-items: end;
-    font-family: 'Bruno Ace SC';
-    padding: 20px;
-    gap: 40px;
 }
 
 .certificados{
